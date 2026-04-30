@@ -19,4 +19,4 @@ class FlatDiscount(DiscountStrategy):
         self.discount = discount
 
     def apply_discount(self, total):
-        return total - self.discount
+        return max(total - self.discount, 0)

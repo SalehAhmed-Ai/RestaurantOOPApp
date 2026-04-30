@@ -1,6 +1,7 @@
 class Order:
     def __init__(self):
-        self.items = {}  # {name: {"item": MenuItem, "qty": number}}
+        # items format: {name: {"item": MenuItem, "qty": int}}
+        self.items = {}
 
     def add_item(self, item):
         if item._name in self.items:
